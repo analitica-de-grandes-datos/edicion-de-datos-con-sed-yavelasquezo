@@ -41,4 +41,4 @@
 #
 #  >>> Escriba su codigo a partir de este punto <<<
 #
-sed -e 's/,/./g' -e's/;/,/g' -e 's/\\//g' -e 's/n/N/g' -e 's/,,/,N,/g' -e 's/N,\s/N,\\N/g' -e 's/N/\\N/g' -e 's/\([0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9]\)/20\3-\2-\1/g' data.csv
+sed -e 's/,/./g' -e's/;/,/g' -e 's/\\//g' -e 's/n/N/g' -e 's/,,/,N,/g' -e 's/N,\s/N,\\N/g' -e 's/N/\\N/g' -e 's/\([0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9]\)/20\3-\2-\1/g' data.csv > output.csv
